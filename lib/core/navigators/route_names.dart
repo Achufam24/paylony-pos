@@ -8,4 +8,6 @@ class Routes {
    static const String cardWithdrawal = '/cardwithdrawal';
    static const String depositScreen = '/deposit';
    static const String airtime = '/airtime';
+   static const String billPayment = '/billPayment';
+   static const String balanceEnquiry = '/balanceEnquiry';
 }

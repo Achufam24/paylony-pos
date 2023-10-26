@@ -18,6 +18,7 @@ class PaylonyAppBarTwo extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      automaticallyImplyLeading: false,
       // backgroundColor: AppColors.,
       leading: TouchableOpacity(
         onTap: () => Navigator.pop(context),

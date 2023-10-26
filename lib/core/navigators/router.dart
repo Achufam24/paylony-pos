@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:paylony_pos/core/navigators/navigator.dart';
 import 'package:paylony_pos/features/airtime/screens/airtimeScreen.dart';
 import 'package:paylony_pos/features/auth/pages/login.dart';
+import 'package:paylony_pos/features/balanceEnquiry/screens/balanceEnquirry.screen.dart';
+import 'package:paylony_pos/features/billsPayment/screens/billsPaymentScreen.dart';
 import 'package:paylony_pos/features/deposit/stl/depositScreen.dart';
 import 'package:paylony_pos/features/home/screens/dashbaord.dart';
 import 'package:paylony_pos/features/onboarding/pages/splash.dart';
@@ -33,6 +35,12 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case Routes.airtime:
       return _getPageRoute(
           routeName: settings.name, viewToShow: const AirtimeScreen());
+    case Routes.billPayment:
+      return _getPageRoute(
+          routeName: settings.name, viewToShow: const BillsPaymentScreen());
+    case Routes.balanceEnquiry:
+      return _getPageRoute(
+          routeName: settings.name, viewToShow: const BalanceEnquiryScreen());
     // case Routes.authenticate:
     //   return _getPageRoute(
     //       routeName: settings.name, viewToShow: Authenticate());

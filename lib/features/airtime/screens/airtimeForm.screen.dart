@@ -5,8 +5,21 @@ import 'package:paylony_pos/app/styles/styles.dart';
 import 'package:paylony_pos/app/views/widgets/widgets.dart';
 import 'package:paylony_pos/core/constants/textfield.dart';
 
-class SelectAirtime extends StatelessWidget {
+class SelectAirtime extends StatefulWidget {
   const SelectAirtime({super.key});
+
+  @override
+  State<SelectAirtime> createState() => _SelectAirtimeState();
+}
+
+class _SelectAirtimeState extends State<SelectAirtime> {
+  final _networkController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    _networkController.text = "Select Network";
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -19,10 +32,11 @@ class SelectAirtime extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                TextSemiBold("Select Dispute type", fontSize: 12, fontWeight: FontWeight.w400, color: AppColors.primaryGrey,),
+                TextSemiBold("Network", fontSize: 12, fontWeight: FontWeight.w400, color: AppColors.primaryGrey,),
                 const Gap(6),
                 TextFormField(
-                  enabled: false,
+                  controller: _networkController,
+                  // enabled: false,
                   decoration: textInputDecoration.copyWith(
                     fillColor: AppColors.white,
                     suffixIcon: IconButton(onPressed:() {
@@ -36,7 +50,20 @@ class SelectAirtime extends StatelessWidget {
                   ),
                 ),
                 const Gap(25),
-                 TextSemiBold("Account Number", fontSize: 12, fontWeight: FontWeight.w400, color: AppColors.primaryGrey,),
+                 TextSemiBold("Phone Number", fontSize: 12, fontWeight: FontWeight.w400, color: AppColors.primaryGrey,),
+                const Gap(6),
+                TextFormField(
+                  decoration: textInputDecoration.copyWith(
+                    fillColor: AppColors.white,
+                    enabledBorder:  OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: AppColors.primaryGrey.withOpacity(0.4)
+                      )
+                    )
+                  ),
+                ),
+                 const Gap(25),
+                 TextSemiBold("Amount", fontSize: 12, fontWeight: FontWeight.w400, color: AppColors.primaryGrey,),
                 const Gap(6),
                 TextFormField(
                   decoration: textInputDecoration.copyWith(
