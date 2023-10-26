@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(
       Duration(seconds: 3),
       () {
-        Navigator.pushNamed(context, Routes.dashbaord);
+        Navigator.pushNamed(context, Routes.secondSplash);
       },
     );
   }

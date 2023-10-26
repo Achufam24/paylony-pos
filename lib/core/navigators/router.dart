@@ -6,6 +6,7 @@ import 'package:paylony_pos/features/balanceEnquiry/screens/balanceEnquirry.scre
 import 'package:paylony_pos/features/billsPayment/screens/billsPaymentScreen.dart';
 import 'package:paylony_pos/features/deposit/stl/depositScreen.dart';
 import 'package:paylony_pos/features/home/screens/dashbaord.dart';
+import 'package:paylony_pos/features/onboarding/pages/secondSplash.screen.dart';
 import 'package:paylony_pos/features/onboarding/pages/splash.dart';
 import 'package:paylony_pos/features/withdrawal/screens/cardWithdrawal.screen.dart';
 import 'package:paylony_pos/features/withdrawal/screens/cashWithdrawal.screen.dart';
@@ -16,6 +17,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRoute(
         routeName: settings.name,
         viewToShow: const SplashScreen(),
+      );
+    case Routes.secondSplash:
+      return _getPageRoute(
+        routeName: settings.name,
+        viewToShow: const SplashScreen2(),
       );
     case Routes.login:
       return _getPageRoute(
