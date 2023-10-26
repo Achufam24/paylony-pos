@@ -1,0 +1,52 @@
+name: paylony_pos
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^1.1.6
+  gap: ^3.0.1
+  dio: ^5.1.2
+  json_annotation: ^4.8.0
+  intl: ^0.17.0
+  flutter_secure_storage: ^8.0.0
+  get_it: ^7.6.0
+  internet_connection_checker: ^1.0.0+1
+  jwt_decode: ^0.3.1
+  another_flushbar: ^1.12.29
+  injectable: ^2.1.1
+  flutter_animate: ^4.1.1+1
+  logger: ^1.3.0
+  provider: ^6.0.5
+  image_picker: ^0.8.7+5
+  flutter_animated_loadingkit: ^0.0.7
+  flutter_screenutil: ^5.9.0
+  otp_pin_field: ^1.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: ProductSans
+      fonts:
+        - asset: assets/fonts/ProductSansBoldItalic.ttf
+        - asset: assets/fonts/ProductSansBold.ttf
+        - asset: assets/fonts/ProductSansItalic.ttf
+        # - asset: assets/fonts/ProductSansRegularItalic.ttf
+
