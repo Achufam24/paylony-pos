@@ -11,5 +11,12 @@ class Routes {
    static const String airtime = '/airtime';
    static const String billPayment = '/billPayment';
    static const String balanceEnquiry = '/balanceEnquiry';
+   static const String transfer = '/transfer';
+   static const String account = '/account';
+   static const String dispute = '/dispute';
+   static const String transactions = '/transactions';
+   static const String reort = '/report';
+   static const String bankNetwork = '/bank_network';
+   static const String nfc = '/nfc';
    
 }

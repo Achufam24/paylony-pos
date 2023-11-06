@@ -25,14 +25,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
     ButtonModel(icon: AppAsset.wallet, text: "Deposit", link: "/deposit"),
     ButtonModel(icon: AppAsset.phone, text: "Airtime/Data", link: "/airtime"),
     ButtonModel(icon: AppAsset.bill, text: "Bill Payments", link: "/billPayment"),
-    ButtonModel(icon: AppAsset.stats, text: "Card Transfer", link: "/pos"),
-    ButtonModel(icon: AppAsset.arrow, text: "Transactions", link: "/airtime"),
+    ButtonModel(icon: AppAsset.stats, text: "Card Transfer", link: "/transfer"),
+    ButtonModel(icon: AppAsset.arrow, text: "Transactions", link: "/transactions"),
     ButtonModel(icon: AppAsset.balance, text: "Balance Inquiry", link: "/balanceEnquiry"),
-    ButtonModel(icon: AppAsset.info, text: "Daily Report", link: "/billPayment"),
-    ButtonModel(icon: AppAsset.message, text: "Dispute", link: "/billPayment"),
-    ButtonModel(icon: AppAsset.profile, text: "My Account", link: "/billPayment"),
-    ButtonModel(icon: AppAsset.status, text: "Network Status", link: "/billPayment"),
-    ButtonModel(icon: AppAsset.rss, text: "NFC", link: "/billPayment"),
+    ButtonModel(icon: AppAsset.info, text: "Daily Report", link: "/report"),
+    ButtonModel(icon: AppAsset.message, text: "Dispute", link: "/dispute"),
+    ButtonModel(icon: AppAsset.profile, text: "My Account", link: "/account"),
+    ButtonModel(icon: AppAsset.status, text: "Network Status", link: '/bank_network'),
+    ButtonModel(icon: AppAsset.rss, text: "NFC", link: "/nfc"),
   ];
 
   @override
