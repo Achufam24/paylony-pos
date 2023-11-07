@@ -29,6 +29,7 @@ dependencies:
   flutter_screenutil: ^5.9.0
   otp_pin_field: ^1.2.2
   calendar_date_picker2: ^0.5.3
+  dropdown_button2: ^2.3.9
 
 dev_dependencies:
   flutter_test:

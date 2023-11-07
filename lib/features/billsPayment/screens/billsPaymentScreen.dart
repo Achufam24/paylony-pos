@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:paylony_pos/app/styles/styles.dart';
 import 'package:paylony_pos/app/views/widgets/widgets.dart';
+import 'package:paylony_pos/features/billsPayment/screens/betting/bettingProvider.screen.dart';
+import 'package:paylony_pos/features/billsPayment/screens/electricity.screen.dart';
 
 class BillsPaymentScreen extends StatelessWidget {
   const BillsPaymentScreen({super.key});
@@ -40,10 +42,10 @@ class BillsPaymentScreen extends StatelessWidget {
             Gap(10),
              TouchableOpacity(
               onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => const AmountWithdrawalScreen()),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ElectricityProvidersScreen()),
+                );
               },
               child: Container(
                 padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
@@ -63,10 +65,10 @@ class BillsPaymentScreen extends StatelessWidget {
             Gap(10),
             TouchableOpacity(
               onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => const AmountWithdrawalScreen()),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const BettingProvider()),
+                );
               },
               child: Container(
                 padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
